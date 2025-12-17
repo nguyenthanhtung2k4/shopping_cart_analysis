@@ -53,7 +53,7 @@ pm.execute_notebook(
         MIN_THRESHOLD=1.0,
 
         # Lọc luật
-        FILTER_MIN_SUPPORT=0.01,
+        FILTER_MIN_SUPPORT=0.005,
         FILTER_MIN_CONF=0.3,
         FILTER_MIN_LIFT=1.2,
         FILTER_MAX_ANTECEDENTS=2,
@@ -63,10 +63,10 @@ pm.execute_notebook(
         TOP_N_RULES=20,
 
         # Tắt plot khi chạy batch (bật = True nếu muốn xem hình)
-        PLOT_TOP_LIFT=False,
-        PLOT_TOP_CONF=False,
-        PLOT_SCATTER=False,
-        PLOT_NETWORK=False,
+        PLOT_TOP_LIFT=True,
+        PLOT_TOP_CONF=True,
+        PLOT_SCATTER=True,
+        PLOT_NETWORK=True,
     ),
     kernel_name="python3",
 )
