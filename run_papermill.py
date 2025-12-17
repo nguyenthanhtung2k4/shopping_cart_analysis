@@ -45,7 +45,7 @@ pm.execute_notebook(
         RULES_OUTPUT_PATH="data/processed/rules_apriori_filtered.csv",
 
         # Tham số Apriori
-        MIN_SUPPORT=0.01,
+        MIN_SUPPORT=0.02,
         MAX_LEN=3,
 
         # Generate rules
@@ -54,7 +54,7 @@ pm.execute_notebook(
 
         # Lọc luật
         FILTER_MIN_SUPPORT=0.01,
-        FILTER_MIN_CONF=0.3,
+        FILTER_MIN_CONF=0.4,
         FILTER_MIN_LIFT=1.2,
         FILTER_MAX_ANTECEDENTS=2,
         FILTER_MAX_CONSEQUENTS=1,
@@ -63,12 +63,12 @@ pm.execute_notebook(
         TOP_N_RULES=20,
 
         # Tắt plot khi chạy batch (bật = True nếu muốn xem hình)
-        PLOT_TOP_LIFT=False,
-        PLOT_TOP_CONF=False,
-        PLOT_SCATTER=False,
-        PLOT_NETWORK=False,
-        PLOT_PLOTLY_NETWORK=False,
-        PLOT_PLOTLY_SCATTER=False,  
+        PLOT_TOP_LIFT=True,
+        PLOT_TOP_CONF=True,
+        PLOT_SCATTER=True,
+        PLOT_NETWORK=True,
+        PLOT_PLOTLY_NETWORK=True,
+        PLOT_PLOTLY_SCATTER=True,  
     ),
     kernel_name="python3",
 )
