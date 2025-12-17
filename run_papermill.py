@@ -45,7 +45,7 @@ pm.execute_notebook(
         RULES_OUTPUT_PATH="data/processed/rules_apriori_filtered.csv",
 
         # Tham số Apriori
-        MIN_SUPPORT=0.01,
+        MIN_SUPPORT=0.02,
         MAX_LEN=3,
 
         # Generate rules
